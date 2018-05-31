@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fade</title>
+    <script>
+        $(window).on("load", function() {
+            $(window).scroll(function() {
+                var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                $(".col").each(function() {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+                    /* If the element is completely within bounds of the window, fade it in */
+                    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity") == 0) {
+                            $(this).fadeTo(500, 1);
+                        }
+                    } else { //object goes out of view (scrolling up)
+                        if ($(this).css("opacity") == 1) {
+                            $(this).fadeTo(500, 0);
+                        }
+                    }
+                });
+            }).scroll(); //invoke scroll-handler on page-load
+        });
+
+    </script>
+</head>
+
+
+<body>
+    <div class="col" style="height: 900px;width: 90%;background-color: antiquewhite;">
+        <div style="height: 100px;width: 100px;color: aqua ;z-index: 2;"> </div>
+    </div>
+
+    <div style="height: 900px;;min-width: 100%;background-color: antiquewhite;">
+        <pre class="col">vqenv
+    wihbiwev
+    wdviwdbvq
+    dvqjdvq
+    dvqdjv</pre>
+    </div>
+</body>
+
+</html>

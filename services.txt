@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>services</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="services.css">
+
+    <script>
+        setInterval("slideshow()", 2000);
+
+        var app = new Array("services1.jpg", "services22.jpg", "services33.jpg", "services44.jpg");
+        var i = 0;
+
+        function slideshow() {
+            document.getElementById("apple").src = app[i];
+            if (i < (app.length - 1))
+                i++;
+            else
+                i = 0;
+        }
+
+    </script>
+    </head>
+
+<body onload="slideshow()">
+    <div style="width=100%; height: 850px; background-color:white">
+        <div style="width: 100%;height: 400px;background-color:#A73FE3; position:absolute;">
+            <div class="menu">
+                <a href="index1.html" class="hvr-underline-from-left ">Home</a>
+                <a href="services1.html" class="hvr-underline-from-left active">Services</a>
+                <a href="index2.html" class="hvr-underline-from-left">Login/Register</a>
+                <a href="contact.html" class="hvr-underline-from-left">Contact us</a>
+                <form>
+                    <div style="float: right; width: 350px;"><input type="text" name="search" placeholder="Search.." class="search"></div>
+                </form>
+            </div>
+
+            <center>
+                <div style="width: 1000px;height: 500px; margin-top:150px !important;">
+                    <img id="apple" alt="slideshow" style="overflow: hidden;">
+                </div>
+            </center>
+        </div>
+    </div>
+        <div style="width: 100%; height: 100px; background-color: white; color: #921FD4;text-align: center; letter-spacing: 0.45em; line-height: 1.8em">BABY SHOWER</div>
+    
+    <div style="width: 100%;height: 500px; background-color: black;">
+        <div style="width: 25%;height: 100%; float:left; "><img src="babyinvitation.jpg"></div>
+        <div style="width: 25%;height: 100%; float: left;"><img src="babyphoto.jpg"></div>
+        <div style="width: 25%; height: 100%; float:left;"><img src="babygame1.jpg"></div>
+        <div style="width: 25%;height: 100%; float:left;"><img src="babydining.jpg"></div>
+    </div>
+    <div style="width: 100%;height: 60px;background-color: white;">
+        <div class="name"> <button class="butto"><span>Invitation cards</span></button></div>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+    
+            </div>            
+        <div class="name"><button class="butto"><span>Photobooth</span></button></div>
+        
+    <div class="name"> <button class="butto"><span>Games</span></button></div>
+            <div class="name"> <a href="services.html" style="text-decoration: none; color: white;"><button class="butto"><span>Dinning Halls</span></button></a>
+            </div>
+            </div>
+    
+
+    <div style="width: 100%; height: 100px; background-color: white; color: #921FD4;text-align: center; letter-spacing: 0.45em; line-height: 1.8em;margin-top: 100px;">WEDDINGS</div>
+    <div style="width: 100%;height: 500px; background-color: black;">
+        <div style="width: 25%;height: 100%; float:left; "><img src="wedcake1.jpg"></div>
+        <div style="width: 25%;height: 100%; float: left;"><img src="weddingphoto1.jpg"></div>
+        <div style="width: 25%;height: 100%; float:left;"><img src="weddingcard1.jpg"></div>
+        <div style="width: 25%;height: 100%; float:left;"><img src="weddingdeco1.jpg"></div>
+    </div>
+    <div style="width: 100%;height: 60px;background-color: white;">
+        <div class="name"><a href="services.html" style="text-decoration: none; color: white;"> <button class="butto"><span>Cakes</span></button></a></div>
+        <div class="name"> <a href="services.html" style="text-decoration: none; color: white;"><button class="butto"><span>Photobooth</span></button></a></div>
+        <div class="name"> <a href="services.html" style="text-decoration: none; color: white;"><button class="butto"><span>Cards</span></button></a></div>
+        <div class="name"> <a href="services.html" style="text-decoration: none; color: white;"><button class="butto"><span>Decorations</span></button></a></div>
+    </div>
+    <div style="width: 100%; height: 100px; background-color: white; color: #921FD4;text-align: center; letter-spacing: 0.45em; line-height: 1.8em;margin-top: 100px;">BIRTHDAYS</div>
+    <div style="width: 100%;height: 500px; background-color: black;">
+        <div style="width: 25%;height: 100%; float:left; "><img src="bdaycake1.jpg"></div>
+        <div style="width: 25%;height: 100%; float: left;"><img src="bdayphoto1.jpg"></div>
+        <div style="width: 25%;height: 100%; float:left;"><img src="tuxpi.com.1509257320.jpg"></div>
+        <div style="width: 25%;height: 100%; float:left;"><img src="bdaycatering11.jpg"></div>
+    </div>
+    <div style="width: 100%;height: 60px;background-color: white;">
+        <div class="name"><a href="services.html" style="text-decoration: none; color: white;"> <button class="butto"><span>Cakes</span></button></a></div>
+        <div class="name"> <a href="services.html" style="text-decoration: none; color: white;"><button class="butto"><span>Photobooth</span></button></a></div>
+        <div class="name"> <a href="services.html" style="text-decoration: none; color: white;"><button class="butto"><span>Decorations</span></button></a></div>
+        <div class="name"> <a href="services.html" style="text-decoration: none; color: white;"><button class="butto"><span>Catering</span></button></a></div>
+    </div>
+    <div style="width: 100%; height: 100px; background-color: white; color: #921FD4;text-align: center; letter-spacing: 0.45em; line-height: 1.8em;margin-top: 100px;">INAUGURATION</div>
+    <div style="width: 100%;height: 500px; background-color: black;">
+        <div style="width: 25%; height: 100%; float:left; "><img src="inaugcard.jpg"></div>
+        <div style="width: 25%; height: 100%; float: left;"><img src="inauggan1.jpg"></div>
+        <div style="width: 25%; height: 100%; float:left;"><img src="inaugdeco.jpg"></div>
+        <div style="width: 25%; height: 100%; float:left;"><img src="inaugcatering1.jpg"></div>
+    </div>
+    <div style="width: 100%;height: 60px;background-color: white;">
+        <div class="name"><a href="services.html" style="text-decoration: none; color: white;"> <button class="butto"><span>Invitation Cards</span></button></a></div>
+
+        <div class="name"><a href="services.html" style="text-decoration: none; color: white;"> <button class="butto"><span>Ganpati Statues</span></button></a></div>
+        <div class="name"><a href="services.html" style="text-decoration: none; color: white;"> <button class="butto"><span>Decorations</span></button></a></div>
+        <div class="name"><a href="services.html" style="text-decoration: none; color: white;"> <button class="butto"><span>Catering</span></button></a></div>
+    </div>
+
+    <div style="width:100%; height:300px;position: absolute; background-color: #A73FE3; color: white; margin-top: 100px;">
+        <div style="height:250px;width: 92%;margin-top: 30px; margin-left: 120px;">
+            <div style="width: 15% ;height:250px;float:left;">
+                <h1 Style="margin-left: 40px; font-family:vernada; font-size: 35px;">Birthday</h1>
+                <ul type="none">
+                    <li><a href="bdaycake.html" class="anchor">cake</a></li>
+                    <li><a href="cattering.html" class="anchor">cattering</a></li>
+                    <li><a href="bdaydecorations.html" class="anchor">decorations</a></li>
+                    <li><a href="bdayphoto.html" class="anchor">photoshootbooth</a></li>
+                </ul>
+            </div>
+            <div style="width: 15% ;height: 100%;float:left;">
+                <h1 Style="margin-left: 40px; font-family:vernada; font-size: 35px;">Wedding</h1>
+                <ul type="none">
+                    <li><a href="weddcake.html" class="anchor">cake</a></li>
+                    <li><a href="cattering.html" class="anchor">cattering</a></li>
+                    <li><a href="weddinvitation.html" class="anchor">Invitation Cards</a></li>
+                    <li><a href="weddingphoto.html" class="anchor">photoshootbooth</a></li>
+                </ul>
+
+            </div>
+            <div style="width: 17% ;height: 100%;float:left;">
+                <h1 Style="margin-left: 40px; font-family:vernada; font-size: 35px;">Baby Shower</h1>
+                <ul type="none">
+                    <li><a href="babyinvitation.html" class="anchor">Invitation cards</a></li>
+                    <li><a href="games.html" class="anchor">games</a></li>
+                    <li><a href="babyhotel.html" class="anchor">hotel booking</a></li>
+                    <li><a href="babyphoto.html" class="anchor">photoshoot booth</a></li></ul>
+            </div>
+            <div style="width: 18% ;height: 100%;float:left;">
+                <h1 Style="margin-left: 40px; font-family:vernada; font-size: 35px;">Inauguration</h1>
+                <ul type="none">
+                    <li><a href="ganpati.html" class="anchor">ganpati statue</a></li>
+                    <li><a href="inaugdeco.html" class="anchor">Decorations</a></li>
+                    <li><a href="cattering.html" class="anchor">cattering</a></li>
+                    <li><a href="inauginvitation.html" class="anchor">Invitation cards</a></li></ul>
+            </div>
+            <div style="width: 15% ;height: 100%; float:left;">
+                <h1 Style="margin-left: 40px; font-family:vernada; font-size: 35px;">contact us:</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

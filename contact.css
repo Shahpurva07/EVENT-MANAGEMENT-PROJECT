@@ -1,0 +1,79 @@
+
+.menu {
+/*    background-color: rgb(95, 155, 198);*/
+    position: absolute;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    z-index: 1;
+    height: 7.7%;
+    font-size: 21px;
+}
+
+/* Links inside the navbar */
+
+.menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+    /*background-color: #FFCB8C;*/
+    color: white;
+}
+
+.menu a.active {
+    background-color: inherit;
+    color: white;
+    /*border-right: 2px solid #20DCE5;
+    border-bottom: 2px solid #20DCE5;*/
+    opacity: 0.9;
+    text-decoration: underline;
+    /*font-size: 24px;*/
+}
+
+.searc {
+    float: right;
+    width: 200px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 18px;
+    background-repeat: no-repeat;
+    padding: 21px 20px 12px 40px;
+}
+
+.searc:focus {
+
+    width: 350px;
+    /*border: 2px solid #BEAEDF*/;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+    margin-right: 2px;
+    border-radius: 25px !important;
+}
+
+::-webkit-input-placeholder {
+    color:#414141;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    font-size: 16px;
+}
+
+button:active{
+    outline: none;
+}
+

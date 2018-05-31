@@ -1,0 +1,362 @@
+.pphp {
+    justify-content: center;
+    background-image: url(back2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* remove codrops styles and reset the whole thing */
+
+#container_demo {
+    text-align: left;
+    padding: 140px !important;
+    margin: 0 auto;
+    font-family: "Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+}
+
+/** fonts used for the icons **/
+
+@font-face {
+    font-family: 'FontomasCustomRegular';
+    src: url('fonts/fontomas-webfont.eot');
+    src: url('fonts/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/fontomas-webfont.woff') format('woff'),
+    url('fonts/fontomas-webfont.ttf') format('truetype'),
+    url('fonts/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a.hiddenanchor {
+    display: none;
+}
+
+/** The wrapper that will contain our two forms **/
+
+#wrapper {
+    width: 60%;
+    right: 0px;
+    min-height: 560px;
+    margin: 0px auto;
+    width: 500px;
+    position: relative;
+}
+
+/**** Styling the form elements **/
+
+/**** general text styling ****/
+
+#wrapper a {
+    color: rgb(95, 155, 198);
+    text-decoration: underline;
+}
+
+#wrapper h1 {
+    font-size: 48px;
+    color: #276B9E;
+    padding: 2px 0 10px 0;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+#wrapper p {
+    margin-bottom: 15px;
+}
+
+#wrapper label {
+    color: rgb(64, 92, 96);
+    position: relative;
+}
+
+/**** advanced input styling ****/
+
+/* placeholder */
+
+::-webkit-input-placeholder {
+    color: rgb(190, 188, 188);
+    font-style: italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: rgb(190, 188, 188);
+    font-style: italic;
+}
+
+input {
+    outline: none;
+}
+
+/* all the input except submit and checkbox */
+
+#wrapper input:not([type="checkbox"]) {
+    width: 92%;
+    margin-top: 4px;
+    padding: 10px 5px 10px 32px;
+    border: 1px solid rgb(178, 178, 178);
+
+}
+
+#wrapper input:not([type="checkbox"]):active,
+#wrapper input:not([type="checkbox"]):focus {
+    border: 1px solid rgba(91, 90, 90, 0.7);
+    background: rgba(238, 236, 240, 0.2);
+
+}
+
+/** the magic icon trick ! **/
+
+[data-icon]:after {
+    content: attr(data-icon);
+    font-family: 'FontomasCustomRegular' !important;
+    color: #276B9E;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    width: 30px;
+}
+
+/*styling both submit buttons */
+
+#wrapper p.button input {
+    width: 30%;
+    cursor: pointer;
+    background: #276B9E;
+    padding: 8px 5px;
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: 24px;
+    border: 1px solid rgb(28, 108, 122);
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+#wrapper p.button input:hover {
+    background: rgb(74, 179, 198);
+}
+
+#wrapper p.button input:active,
+#wrapper p.button input:focus {
+    background: rgb(40, 137, 154);
+    position: relative;
+    top: 1px;
+    border: 1px solid rgb(12, 76, 87);
+
+}
+
+p.login.button,
+p.signin.button {
+    text-align: right;
+    margin: 5px 0;
+}
+
+
+/* styling the checkbox "keep me logged in"*/
+
+.keeplogin {
+    margin-top: -5px;
+}
+
+.keeplogin input,
+.keeplogin label {
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.keeplogin input#loginkeeping {
+    margin-right: 5px;
+}
+
+.keeplogin label {
+    width: 80%;
+}
+
+
+/*styling the links to change from one form to another */
+
+p.change_link {
+    position: absolute;
+    color: rgb(127, 124, 124);
+    left: 0px;
+    height: 22px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid rgb(219, 229, 232);
+    background: rgb(225, 234, 235);
+
+}
+
+#wrapper p.change_link a {
+    display: inline-block;
+    font-weight: bold;
+    background: rgb(247, 248, 241);
+    padding: 2px 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#wrapper p.change_link a:hover {
+    color: rgb(57, 191, 215);
+    background: rgb(247, 247, 247);
+    border: 1px solid rgb(74, 179, 198);
+}
+
+#wrapper p.change_link a:active {
+    position: relative;
+    top: 1px;
+}
+
+/** Styling both forms **/
+
+#login {
+    position: absolute;
+    top: 0px;
+    width: 88%;
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189, 0.8);
+
+
+}
+
+#registerr {
+    position: absolute;
+    top: 0px;
+    width: 88%;
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189, 0.8);
+
+
+}
+
+#registerr {
+    z-index: 999999999999999999;
+    opacity: 1;
+}
+
+#login {
+    z-index: 22;
+}
+
+.animate {
+
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.menu {
+    background-color: #276B9E;
+    position: absolute;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    z-index: 1;
+    height: 7.7%;
+    font-family: cursive;
+    font-display: block;
+    font-size: 21px;
+
+}
+
+/* Links inside the navbar */
+
+.menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+    /*background-color: #FFCB8C;*/
+    color: white;
+}
+
+.menu a.active {
+    background-color: inherit;
+    color: white;
+    /*border-right: 2px solid #20DCE5;
+    border-bottom: 2px solid #20DCE5;*/
+    opacity: 0.9;
+    text-decoration: underline;
+    /*font-size: 24px;*/
+}
+
+.search {
+    float: right;
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #276B9E;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon3.png');
+    background-position: 10px 18px;
+    background-repeat: no-repeat;
+    padding: 21px 20px 12px 40px;
+}
+
+.search:focus {
+
+    width: 350px;
+    border: 2px solid #276B9E;
+    border-radius: 10px;
+    color: #BEAEDF;
+    outline: none;
+    margin-right: 2px;
+    border-radius: 25px !important;
+}
+
+::-webkit-input-placeholder {
+    color: #276B9E;
+}
+
+.hvr-underline-from-left {
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: white;
+    height: 2px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+    right: 0;
+}
